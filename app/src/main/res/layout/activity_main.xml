@@ -24,15 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Erdman"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/New_Dorm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:text="New Dorm"
         app:layout_constraintStart_toEndOf="@+id/Erdman"
         tools:layout_editor_absoluteY="16dp" />
@@ -41,30 +41,30 @@
         android:id="@+id/Uncommon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:text="Uncommon"
         app:layout_constraintStart_toEndOf="@+id/New_Dorm"
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
+        android:id="@+id/countdown"
+        android:layout_width="354dp"
+        android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:text="Count Down"
+        app:layout_constraintBottom_toTopOf="@+id/schedule"
         app:layout_constraintTop_toBottomOf="@+id/New_Dorm"
-        app:layout_constraintVertical_bias="0.586"
-        tools:layout_editor_absoluteX="20dp" />
+        app:layout_constraintVertical_bias="0.47"
+        tools:layout_editor_absoluteX="14dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="346dp"
-        android:layout_height="254dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="187dp" />
+        android:id="@+id/schedule"
+        android:layout_width="352dp"
+        android:layout_height="258dp"
+        android:text="Schedule"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="179dp" />
 
 </android.support.constraint.ConstraintLayout>
