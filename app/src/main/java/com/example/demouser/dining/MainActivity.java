@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
     private int i;
+<<<<<<< HEAD
     //private LocalTime current;
+=======
+>>>>>>> 0ca6c973145f230cc1db31f2145a1989816170d4
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
