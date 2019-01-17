@@ -1,27 +1,35 @@
 package com.example.demouser.dining;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.Pair;
 import android.widget.TextView;
 
 import java.sql.Time;
+import java.time.Clock;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-    private int i; 
+    private int i;
+    //private LocalTime current;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         dataCreate();
-
-
+        LocalTime currentTime = LocalTime.now();
+        String timeNow = currentTime.toString();
+        Log.d("Vinty", timeNow);
 
     }
 
