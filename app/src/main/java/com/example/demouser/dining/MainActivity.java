@@ -1,5 +1,5 @@
-package com.example.demouser.dining;
 
+<<<<<<< HEAD
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -273,3 +273,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+=======
+>>>>>>> b2bdf1c5210a410372aeb6674002a887c9339cb7
