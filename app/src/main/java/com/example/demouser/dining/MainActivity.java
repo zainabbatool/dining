@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         Long timeDifference = checkRange(timeNow,timesforDay.first,timesforDay.second); // current time difference
         countDown(timeDifference);
-        Log.d("blah",timeDifference.toString());
+        Log.d("checktimediff",timeDifference.toString());
 
 
 
@@ -83,13 +83,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Pair<String,String> timesforDay = (newDorm.get(day)).get(0);
-
+    //one hashmap for each dining hall
        public void dataCreate(){
         newDorm = new HashMap<>();
+           //one list for each day of week
         ArrayList<Pair<String,String>> list1 = new ArrayList<>();
         ArrayList<Pair<String,String>> list2 = new ArrayList<>();
         ArrayList<Pair<String,String>> list3 = new ArrayList<>();
-
+    //each pair contains a meal time
         Pair<String, String> pair1 = new Pair<>("12:00:00","20:00:00");
         Pair<String, String> pair2 = new Pair<>("12:00:00","18:30:00");
         Pair<String, String> pair3 = new Pair<>("11:00:00","18:30:00");
